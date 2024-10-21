@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .menu-container {
+    position: fixed;
+  }
+  
+  #menu-toggle {
+    display: none; /* Hide the checkbox */
+  }
+  
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .line {
+    height: 4px;
+    background-color: #00468b;
+    transition: 0.3s;
+  }
+  
+  .nav {
+    display: none; /* Hide navigation by default */
+    position: 10px;
+    top: 50px; /* Adjust based on your layout */
+    right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #3D405B;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 5px 0;
+  }
+  
+  .nav ul li {
+    padding: 10px 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    display: block;
+  }
+  
+  
+  #menu-toggle:checked + .hamburger + .nav {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+.ideas-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ideas-section h2 {
+    color: #00305f;
+}
+.ideas-section label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+.ideas-section input[type="text"], 
+.ideas-section input[type="email"], 
+.ideas-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.ideas-section textarea {
+    resize: vertical;
+    height: 150px;
+}
+.ideas-section button {
+    background-color: #00305f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.ideas-section button:hover {
+    background-color: #005080;
+}
